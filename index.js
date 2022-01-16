@@ -14,6 +14,14 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  try {
+    res.json({ message: "Welcome to Footstop Backend!" });
+  } catch (error) {
+    res.json({ success: false, errorMessage: error.message });
+  }
+});
+
 app.use("/products", productRouter);
 app.use("/cart", cartRouter);
 app.use("/user", userRouter);
