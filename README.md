@@ -1,5 +1,5 @@
 # footstop backend
- Backend for the e-commerce application footstop
+ Backend for the e-commerce application [**footstop**](https://foot-stop.netlify.app)
 
 ## Tech Stack
 - ExpressJS
